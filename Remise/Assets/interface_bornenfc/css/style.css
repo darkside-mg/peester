@@ -1,0 +1,66 @@
+/* STYLE CSS */
+html, body {
+	width: 100%;
+	height: 101%;
+}
+body {
+	display: table;
+	font-family: 'nexa_boldregular', helvetica, sans-serif;
+	cursor: pointer;
+}
+#container {
+	display: table-cell; position: relative;
+	width: 100%; height: 101%;
+	vertical-align: middle;
+	background: #434548;
+	overflow: hidden;
+}
+#container #onde {
+	position: relative;
+	width: 230px; height: 230px;
+	margin: auto;
+}
+#container h1 {
+	position: absolute;
+	bottom: 50px; left: 50px;
+	color:#6A717F;
+	font-size: 55px;
+	text-transform: uppercase;
+}
+
+#onde div {
+	display: block; position: absolute;
+	width: 100%; height: 100%;
+	top: 0; left: 0;
+	background-repeat: no-repeat;
+	-webkit-transition: opacity .2s ease-in-out .0s;
+	   -moz-transition: opacity .2s ease-in-out .0s;
+		 -o-transition: opacity .2s ease-in-out .0s;
+			transition: opacity .2s ease-in-out .0s;
+}
+#onde #stepA {
+	background-image: url("../img/nfc_gris.png");
+	background-position: 0 32.25px;
+	background-size: 230px 165.5px;
+	opacity: 1;
+	z-index: 2000;
+}
+#onde #stepB {
+	background-image: url("../img/nfc_vert.png");
+	background-position: 0 32.25px;
+	background-size: 230px 165.5px;
+	opacity: 0;
+	z-index: 3000;
+}
+#onde #stepC {
+	background-image: url("../img/qrcode-grey_final.png");
+	background-size: 230px 230px;
+	opacity: 0;
+	z-index: 1000;
+}
+
+
+
+
+
+

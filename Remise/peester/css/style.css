@@ -1,0 +1,1000 @@
+/**************************************************************
+***************************************************************
+STRUCTURE PRINCIPALE TOUT FORMAT
+***************************************************************
+***************************************************************/
+
+/* A trier par la suite pour éviter les doublons */
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold.eot');
+    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold.woff') format('woff'),
+         url('../fonts/raleway-bold.ttf') format('truetype'),
+         url('../fonts/raleway-bold.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular.eot');
+    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular.woff') format('woff'),
+         url('../fonts/raleway-regular.ttf') format('truetype'),
+         url('../fonts/raleway-regular.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: 'ralewayregular', sans-serif;
+	line-height: 1.5;
+}
+
+#container {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+h2 {
+	font-family: 'ralewaybold', sans-serif;
+	color: #49AEF2;
+	font-size: 40px;
+	margin-bottom: 30px;
+	line-height: 1;
+}
+
+p {
+	color: #999;
+}
+
+/**************************************************************
+***************************************************************
+FORMAT ORDINATEUR
+***************************************************************
+***************************************************************/
+
+/*********** TITRE + MENU ***********/
+
+#menu {
+	width: 100%;
+	position: fixed;
+	background: #fff;
+	z-index: 100;
+	padding-top: 80px;
+	padding-bottom: 20px;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	transition: .2s;
+}
+
+h1{
+	font-family: 'ralewaybold', sans-serif;
+	font-size: 36px;
+	float: left;
+	margin-left: 3.5%;
+}
+
+h1 a {
+	color: #49AEF2;
+	text-decoration: none;
+	background: url(../img/peester-logo2.png) no-repeat;
+	background-size: 141px 41px;
+	display: block;
+	width: 200px;
+	height: 41px;
+	text-indent: -9999px;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	transition: .2s;
+}
+
+#menu ul {
+	float: right;
+	list-style-type: none;
+	padding-top: 22px;
+}
+
+#menu li {
+	font-size: 16px;
+	float: left;
+	margin-right: 50px;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	transition: .2s;
+}
+
+#menu li a {
+	text-decoration: none;
+	color: #999;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	transition: .2s;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 5px;
+}
+
+#menu li a:hover{
+	color: #49AEF2;
+	border-bottom: 2px solid #49AEF2;
+}
+
+/* EFFET SCROLL SUR MENU */
+
+header.smaller #menu {
+    padding-top: 20px;
+}
+
+header.smaller #menu ul {
+    padding-top: 15px;
+
+}
+
+header.smaller h1 a {
+	-ms-transform: scale(0.8,0.8); /* IE 9 */
+    -webkit-transform: scale(0.8,0.8); /* Chrome, Safari, Opera */
+    transform: scale(0.8,0.8); /* Standard syntax */
+}
+
+/*********** ID = PRESENTATION ***********/
+
+#presentation {
+	width: 100%;
+	max-width: 1920px;
+	padding-top: 136px;
+	overflow: hidden;
+}
+
+#presentation .colonne-gauche {
+	width: 43%;
+	float: left;
+	padding: 100px 3.5%;
+}
+
+#wc-presentation {
+	width: 100%;
+	max-width: 506px;
+	margin: 0 auto;
+	display: block;
+}
+
+#presentation .colonne-droite {
+	width: 43%;
+	float: right;
+	padding: 150px 3.5%;
+	background: #fff;
+}
+
+#presentation a {
+	display: block;
+	font-family: 'ralewaybold', sans-serif;
+	font-size: 18px;
+	color: #49AEF2;
+	text-decoration: none;
+
+	width: 218px;
+	margin-top: 60px;
+	padding: 20px;
+	background: #fff;
+	border: 5px solid #49AEF2;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;
+	
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	transition: .2s;
+}
+
+#presentation a:hover {
+	background: #49AEF2;
+	color: #fff;
+}
+
+/*********** ID = VIDEO ***********/
+
+#video {
+	width: 100%;
+	max-width: 1920px;
+	padding: 100px 0;
+	background: #fff;
+}
+
+#video video {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: block;
+}
+
+/*********** ID = TOILETTE ***********/
+
+#toilette {
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	list-style: none;
+	text-align: center;
+}
+
+#toilette .bloc {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	margin: -0.135em;
+	width: 26.333%;
+	height: 400px;
+	padding: 50px 3.5% 0;
+}
+
+#toilette .bloc:nth-child(1){
+	background: url(../img/toilette-alimentation.jpg) no-repeat center center;
+}
+
+#toilette .bloc:nth-child(3){
+	background: url(../img/toilette-attente.jpg) no-repeat center center;
+}
+
+#toilette .bloc:nth-child(5){
+	background: url(../img/toilette-connexion.jpg) no-repeat center center;
+}
+
+#toilette .bloc:nth-child(7){
+	background: url(../img/toilette-analyse.jpg) no-repeat center center;
+}
+
+#toilette .bloc:nth-child(9){
+	background: url(../img/toilette-cuvette.jpg) no-repeat center center;
+}
+
+#toilette h2, #toilette p {
+	text-align: left;
+}
+
+/* Gestion des triangles dans images */
+
+/*#toilette .bloc:nth-child(odd):after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent #ffffff transparent ;
+}
+
+#toilette .bloc:nth-child(1):after, #toilette .bloc:nth-child(7):after {
+	border-width: 13px 25px 13px 0;
+	right: 0px;
+}
+
+#toilette .bloc:nth-child(3):after{
+	border-width: 13px 0px 13px 25px;
+	left: 0px;
+	bottom: 50px;
+}
+
+#toilette .bloc:nth-child(5):after{
+	border-width: 13px 0px 13px 25px;
+	left: 0;
+}
+
+#toilette .bloc:nth-child(9):after{
+	border-width: 25px 13px 0 13px;
+	border-color: #ffffff transparent transparent;
+	top: 0;
+	left: 50px;
+}*/
+
+
+
+/*********** ID = APPLI ***********/
+
+.etapes-appli{
+	overflow: hidden;
+}
+
+#appli .colonne-gauche {
+	width: 43%;
+	float: left;
+	padding: 100px 3.5%;
+	padding-top: 150px;
+}
+#appli .colonne-gauche p,#appli .colonne-gauche h2  {
+	margin-left: 50px;
+}
+#appli .colonne-gauche p,#appli .colonne-droite p  {
+	max-width: 450px;
+}
+
+#appli .colonne-droite {
+	width: 43%;
+	float: right;
+	padding: 100px 3.5%;
+	background: #fff;
+}
+
+#appli .etapes-appli:nth-child(odd) .colonne-gauche{
+	float: right;
+}
+
+#appli .etapes-appli:nth-child(odd) .colonne-droite{
+	float: left;
+}
+
+#appli img {
+	display: block;
+	margin: 0 auto;
+	width: 186px;
+}
+
+.titre-iframe{
+	text-align: center;
+}
+
+iframe {
+    border-image: url("../img/phone-iframe.png") 110 22 105 26 fill;
+    border-style: solid;
+    border-width: 110px 26px 95px;
+    height: 576px;
+    display: block;
+	margin: 0 auto;
+    position: relative;
+    width: 320px;
+    z-index: 99;
+}
+
+
+
+/*********** ID = CONCEPTEURS ***********/
+
+#concepteurs {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+	padding-top: 100px;
+	text-align: center;
+}
+#concepteurs h2 {
+	margin-bottom: 60px;
+}
+
+#team {
+	list-style-type: none;
+}
+
+
+#team li {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	margin: 1%;
+	width: 30%;
+	height: 150px;
+}
+
+#team li a {
+	text-decoration: none;
+}
+
+#team img {
+	margin: 0 auto 10px;
+	width: 50px;
+	height: 50px;
+	display: block;
+
+	border: 5px solid #ccc;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	border-radius: 100px;
+
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	transition: .2s;
+}
+
+#team a:hover img {
+	border: 5px solid #49AEF2;
+	-webkit-transform: scale(1.10) translateY(3px);
+	-moz-transform: scale(1.10) translateY(3px);
+	-ms-transform: scale(1.10) translateY(3px);
+	transform: scale(1.10) translateY(3px);
+}
+
+#team strong {
+	font-family: 'ralewaybold', sans-serif;
+	display: block;
+	color: #2a9eff;
+}
+
+
+#team span {
+	color: #ccc;
+	font-size: 14px;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	transition: .2s;
+}
+
+#team a:hover span {
+	color: #999;
+}
+
+/*#concepteurs {
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	max-width: 1920px;
+	padding-top: 100px;
+	list-style: none;
+	text-align: center;
+}
+
+#team {
+	list-style-type: none;
+}
+
+#team li {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	margin: 1%;
+	width: 5%;
+	height: 250px;
+}
+
+#team li a {
+	text-decoration: none;
+}
+
+#team img {
+	margin: 0 auto 10px;
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: #fff;
+
+	border: 5px solid #49AEF2;
+	border-radius: 100px;
+}
+
+#team figcaption {
+
+}
+
+#team strong {
+	font-family: 'ralewaybold', sans-serif;
+	display: block;
+	color: #2a9eff;
+	margin-bottom: 5px;
+	
+	display: none;
+}
+
+#team span {
+	color: #ccc;
+	font-size: 14px;
+	display: none;
+}*/
+
+
+
+/*********** FOOTER ***********/
+
+footer {
+	width: 100%;
+	max-width: 1920px;
+	background: #49AEF2;
+	overflow: hidden;
+	padding-top: 50px;
+}
+
+footer h3 {
+	padding: 0 3.5%; 
+	color: #fff;
+	font-size: 24px;
+}
+
+footer h3 span {
+	font-size: 18px;
+	display: block;
+	margin-top: 10px;
+}
+footer a  {
+	text-decoration: none;
+
+	
+}
+footer a:hover  {
+	border-bottom: 1px solid #fff;
+	
+	
+}
+
+footer form {
+	padding-top: 50px;
+	width: 100%;
+	overflow: hidden;
+
+}
+
+footer form input {
+	/*float: left;
+	clear: both;
+	
+	width: 40%;
+	margin: 0 2.5% 15px 5%;*/
+	width: 41%;
+	margin-bottom: 15px;
+	margin-left: 3.5%; 
+	float: left;
+	clear: both;
+	padding: 15px;
+	outline: none;
+	border: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;
+	
+	font-family: 'ralewayregular', sans-serif;
+	font-size: 16px;
+	color: #49AEF2;
+}
+
+footer form textarea {
+	/*width: 40%;
+	height: 146px;
+	margin: 0 5% 15px 2.5%;*/
+	outline: none;
+	width: 41%;
+	height: 147px;
+	margin-top: -128px;
+	margin-right: 3.5%;
+	margin-bottom: 15px;
+	float: right;
+	padding: 15px;
+	border: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;
+	font-family: 'ralewayregular', sans-serif;
+	color: #49AEF2;
+	font-size: 16px;
+}
+
+footer form input[type="submit"]{
+	float: none;
+	width: 200px;
+	margin: 0px auto 50px;
+	display: block;
+	font-family: 'ralewaybold', sans-serif;
+	color: #fff;
+	background: #49AEF2;
+	border: 5px solid #fff;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;
+	cursor: pointer;
+	
+	transition: 0.2s;
+}
+
+footer form input[type="submit"]:hover{
+	background: #fff;
+	color: #49AEF2;
+}
+
+footer #info-footer{
+	width: 100%;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+footer #info-footer a {
+	color: #fff;
+	text-decoration: none;
+	
+}
+
+footer #info-footer span {
+	color: #fff;
+}
+
+
+
+/*footer {
+	width: 100%;
+	max-width: 1920px;
+	background: #49AEF2;
+	overflow: hidden;
+	padding-top: 50px;
+}
+
+footer h3 {
+	padding: 0 5%; 
+	color: #fff;
+	font-size: 24px;
+}
+
+footer h3 span {
+	font-size: 18px;
+	display: block;
+	margin-top: 10px;
+}
+
+footer form {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 50px;
+	background: #49AEF2; 
+}
+
+footer form input {
+	float: left;
+	clear: both;
+	
+	width: 40%;
+	margin: 0 2.5% 15px 5%;
+	padding: 15px;
+	border: none;
+	border-radius: 2px;
+	
+	font-family: 'ralewayregular', sans-serif;
+	font-size: 16px;
+	color: #49AEF2;
+}
+
+footer form textarea {
+	width: 40%;
+	height: 146px;
+	margin: 0 5% 15px 2.5%;
+	padding: 15px;
+	border: none;
+	border-radius: 2px;
+	font-family: 'ralewayregular', sans-serif;
+	color: #49AEF2;
+	font-size: 16px;
+}
+
+footer form input[type="submit"]{
+	float: none;
+	width: 200px;
+	margin: 25px auto 50px;
+	font-family: 'ralewaybold', sans-serif;
+	color: #fff;
+	background: #49AEF2;
+	border: 5px solid #fff;
+	border-radius: 2px;
+	cursor: pointer;
+	
+	transition: 0.2s;
+}
+
+footer form input[type="submit"]:hover{
+	background: #fff;
+	color: #49AEF2;
+}
+
+footer #info-footer{
+	width: 100%;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+footer #info-footer a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+}
+
+footer #info-footer span {
+	color: #fff;
+}*/
+
+
+
+
+
+/**************************************************************
+***************************************************************
+FORMAT TABLETTE (PAYSAGE)
+***************************************************************
+***************************************************************/
+
+@media screen and (max-width: 959px){
+	/*#menu {
+		background: red;
+	}*/
+
+	#presentation {
+		padding-top: 136px; /* A changer une fois le menu supprimé */
+	}
+
+	#wc-presentation {
+		margin: 50px auto 0;
+	}
+
+	/*********** ID = TOILETTE ***********/
+
+	#toilette .bloc {
+		width: 43%;
+	}
+
+	#toilette .bloc:first-child {
+		display: none;
+	}
+
+	#toilette .bloc:nth-child(4), #toilette .bloc:nth-child(8){
+		float: right;
+	}
+
+	#toilette .bloc:nth-child(5), #toilette .bloc:nth-child(9){
+		float: left;
+	}
+
+	/* Gestion des triangles dans images */
+
+
+	/*#toilette .bloc:nth-child(7):after {
+		border-width: 13px 0px 13px 25px;
+		left: 0px;
+	}
+
+	#toilette .bloc:nth-child(5):after{
+		border-width: 13px 25px 13px 0px;
+		margin-left: -25px;
+		left: 100%;
+	}
+
+	#toilette .bloc:nth-child(9):after{
+		border-width: 13px 25px 13px 0px;
+		border-color: transparent #ffffff transparent;
+		
+		left: 100%;
+		margin-left: -25px;
+		top: 50px;
+	}*/
+	
+	/*********** ID = APPLI ***********/
+	#appli .colonne-gauche {
+	padding-top: 100px;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+/**************************************************************
+***************************************************************
+FORMAT TABLETTE (PORTRAIT)
+***************************************************************
+***************************************************************/
+
+@media screen and (max-width: 768px){
+	/*#menu {
+		background: green;
+	}*/
+	
+	#menu{
+		position: static;
+	}
+	
+	#menu h1{
+		float: none;
+		margin: 0 auto;
+		display: block;
+		max-width: 200px;
+		width: 100%;
+	}
+	
+	#menu ul {
+		display: none;
+	}
+
+
+	#wc-presentation {
+		margin: 100px auto 0;
+	}
+	
+	/* EFFET SCROLL SUR MENU */
+
+header.smaller #menu {
+    padding-top: 80px;
+}
+
+header.smaller #menu ul {
+    padding-top: 22px;
+
+}
+
+header.smaller h1 a {
+	-ms-transform: scale(1,1); /* IE 9 */
+    -webkit-transform: scale(1,1); /* Chrome, Safari, Opera */
+    transform: scale(1,1); /* Standard syntax */
+}
+
+
+
+	/*********** ID = PRESENTATION ***********/
+
+	#presentation {
+		padding-top: 0px; /* A changer une fois le menu supprimé */
+	}
+
+
+	/*********** ID = APPLI ***********/
+	
+	#appli .colonne-gauche {
+		padding-top: 70px;
+	}
+	/*********** FOOTER ***********/
+
+		footer form input {
+		/*float: left;
+		clear: both;
+		
+		width: 90%;
+		margin: 0 5% 15px;*/
+		width: 89.09376%;
+		margin: 0 3.5% 15px;
+		padding: 1.953125%;
+	}
+
+	footer form textarea {
+		/*width: 90%;
+		height: 146px;
+		margin: 0 5% 0;*/
+		float: left;
+		width: 89.09376%;
+		padding: 1.953125%;
+		margin: 0 3.5% 15px;
+	}
+
+
+}
+
+
+
+
+
+
+
+/**************************************************************
+***************************************************************
+FORMAT SMARTPHONE
+***************************************************************
+***************************************************************/
+
+@media screen and (max-width: 600px){
+	/*#menu {
+		background: purple;
+	}*/
+
+	/*********** ID = PRESENTATION ***********/
+
+	#presentation .colonne-gauche {
+		width: 93%;
+		float: none;
+		padding: 100px 3.5%;
+	}
+
+	#presentation .colonne-droite {
+		width: 93%;
+		float: none;
+		padding: 0px 3.5% 150px;
+	}
+
+	#presentation a {
+		margin: 60px auto 0;
+	}
+
+	/*********** ID = TOILETTE ***********/
+
+	#toilette .bloc {
+		width: 93%;
+		padding-bottom: 10%;
+	}
+
+	#toilette .bloc:first-child {
+		display: none;
+	}
+
+	#toilette .bloc:nth-child(odd) {
+		height: 300px;
+	}
+
+	#toilette .bloc:nth-child(4), #toilette .bloc:nth-child(8){
+		float: right;
+	}
+
+	#toilette .bloc:nth-child(5), #toilette .bloc:nth-child(9){
+		float: left;
+	}
+
+	/* Gestion des triangles dans images */
+
+	/*#toilette .bloc:after{
+
+	}
+
+	#toilette .bloc:nth-child(3):after, #toilette .bloc:nth-child(7):after{
+		border-width: 25px 13px 0 13px;
+		border-color: #ffffff transparent transparent;
+		top: 0;
+		left: 50px;
+	}
+
+	#toilette .bloc:nth-child(5):after, #toilette .bloc:nth-child(9):after{
+		border-width: 25px 13px 0 13px;
+		border-color: #ffffff transparent transparent;
+		top: 0;
+		left: 100%;
+		margin-left: -75px;
+	}*/
+
+	/*********** ID = APPLI ***********/
+
+	.etapes-appli{
+		overflow: hidden;
+	}
+
+	#appli .colonne-gauche {
+		width: 90%;
+		float: left;
+		padding: 100px 5%;
+	}
+
+	#appli .colonne-droite {
+		width: 90%;
+		float: right;
+		padding: 100px 5%;
+		background: #fff;
+	}
+
+	#appli img {
+		width: 100%;
+		max-width: 186px;
+	}
+	
+	.titre-iframe{
+	display: none;
+}
+
+iframe {
+    display: none;
+}
+
+	/*********** ID = CONCEPTEURS ***********/
+
+	#team li {
+		width: 45%;
+	}
+
+
+}

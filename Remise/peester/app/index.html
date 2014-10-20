@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Peester</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <div id="content">
+                
+             <header class="hide">
+                <h1>Peester</h1>
+                <div id="btnParam" class="hide"><a href="#param">Paramètre</a></div>
+                <div id="btnBack" class="hide"><a href="#">Back</a></div>
+                <h2>Mes rapports</h2>
+            </header>
+
+            <main>
+
+                <section id="login">
+
+                    <div class="logo">
+                        <h1>Peester</h1>
+                        <img src="./img/logo.png" alt="">
+                    </div>  
+                    
+                    <div class="container">
+
+                        <form action="#rapport" method="get">
+                         
+                            <fieldset>
+                                <input name="id" type="text" placeholder="Identifiant"/>
+                                <input name="pass" type="password" placeholder="Mot de passe"/>
+                                <input type="submit" value="Connexion"/>
+                            </fieldset>
+
+                        </form>
+
+                        <h3>Mot de passe oublié ?</h3>
+                        <h3><a href="#signin">Pas encore inscrit ? <b>Enregistrez-vous</b></a></h3>
+
+                    </div>
+
+                </section> <!-- endOf #login -->
+
+
+                <section id="signIn" class="hideLeft">
+                    
+                    <form action="#" method="get">
+                        <div><input type="text" name="pseudo" id="pseudo" placeholder="Identifiant"></div>
+                        <div><input type="password" name="password" id="password" placeholder="motdepasse"></div>
+                        <div><input type="email" name="email" id="email" placeholder="E-mail"></div>
+                        <div><input type="email" name="conf-email" id="conf-email" placeholder="Confirmez e-mail"></div>
+                        <div class="clear">
+                            <ul>
+                                <li class="left">M <input type="radio" name="gender" value="male"></li>
+                                <li class="left">F <input type="radio" name="gender" value="female"></li>
+                            </ul>
+                        </div>
+
+                        <div><input type="date" name="birthday" id="birthday" value="1990-05-26"></div>
+
+                        <div><input type="submit" value="S'inscrire"></div>
+                    </form>
+
+                </section> <!-- endOf #signIn -->
+
+                <section id="parametres">
+
+                            <ul>
+                                <li><a href="">Modifier profil</a></li>
+                                <li> 
+                                    <div class="check"><label>Notifications</label><input type="checkbox" name="modif" value="Modif"></div></li>
+                                <li> 
+                                    <div class="check"><label>Son</label><input type="checkbox" name="son" value="son"></div></li>
+                                <li><a href="#">Crédits</a></li>
+                            </ul>
+                        
+                        <div class="container-btn">
+                            <button>Déconnexion</button>
+                        </div>
+
+                </section> <!-- endOf #parametres -->
+
+
+                <section id="rapport" class="hideRight">
+                    
+                    <div class="rapportList new"><a href="#rapportDetail">
+                        <h3>08 oct <span>20h30</span></h3>
+                        <p class="bad">Trop de Calcium</p>
+                    </a></div>
+                    
+                    <div class="rapportList"><a href="#rapportDetail">
+                        <h3>08 oct <span>20h30</span></h3>
+                        <p class="good">Trop de Calcium</p>
+                    </a></div>
+                    
+                    <div class="rapportList new"><a href="#rapportDetail">
+                        <h3>08 oct <span>20h30</span></h3>
+                        <p class="bad">Trop de Calcium</p>
+                    </a></div>
+                    
+                    <div class="rapportList"><a href="#rapportDetail">
+                        <h3>08 oct <span>20h30</span></h3>
+                        <p class="good">Trop de Calcium</p>
+                    </a></div>
+                    
+                    <div class="rapportList new"><a href="#rapportDetail">
+                        <h3>08 oct <span>20h30</span></h3>
+                        <p class="bad">Trop de Calcium</p>
+                    </a></div>
+                    
+                    <div class="rapportList"><a href="#rapportDetail">
+                        <h3>08 oct <span>20h30</span></h3>
+                        <p class="good">Trop de Calcium</p>
+                    </a></div>
+
+                    <div class="rapportList new"><a href="#rapportDetail">
+                        <h3>08 oct <span>20h30</span></h3>
+                        <p class="bad">Trop de Calcium</p>
+                    </a></div>
+                    
+                    <div class="rapportList"><a href="#rapportDetail">
+                        <h3>08 oct <span>20h30</span></h3>
+                        <p class="good">Trop de Calcium</p>
+                    </a></div>
+                    
+                    <div class="rapportList new"><a href="#rapportDetail">
+                        <h3>08 oct <span>20h30</span></h3>
+                        <p class="bad">Trop de Calcium</p>
+                    </a></div>
+                    
+                    <div class="rapportList"><a href="#rapportDetail">
+                        <h3>08 oct <span>20h30</span></h3>
+                        <p class="good">Trop de Calcium</p>
+                    </a></div>
+                    
+                    <div class="rapportList new"><a href="#rapportDetail">
+                        <h3>08 oct <span>20h30</span></h3>
+                        <p class="bad">Trop de Calcium</p>
+                    </a></div>
+                    
+                    <div class="rapportList"><a href="#rapportDetail">
+                        <h3>08 oct <span>20h30</span></h3>
+                        <p class="good">Trop de Calcium</p>
+                    </a></div>
+
+                </section>  <!-- endOf #rapport -->
+
+                <section id="rapportDetail" class="hideRight">
+                    <div class="conseil">
+                        <h1>8 Oct 20h30</h1>
+                        <h2>Bruxelles</h2>
+                        <h3>Vous avez trop de calcium</h3>
+                        <p>Attenuez vos consommations de produits laitiers et consultez   le medecin.</p>
+                    </div><!-- endOf .conseil -->
+                    <div class="clear">
+                        <img src="./img/calcium1.jpg" alt="Fromage">
+                        <img src="./img/calcium2.jpg" alt="Lait" class="right">
+                    </div>
+                    <div class="detail">
+                        <h2>Détail</h2>
+                        <div class="rapport">
+                            <h3>Alimentation</h3>
+                            <ul>
+                                <li>Protéines <span>0.01g</span></li>
+                                <li><b>Calcium</b><span class="wrong">412mg</span></li>
+                                <li>Glucose<span>0g</span></li>
+                                <li>Sodium<span>5g</span></li>
+                                <li>Potassium<span>3g</span></li>
+                                <li>Caféine<span>0g</span></li>
+                            </ul>
+                        </div><!-- endOf .rapport -->
+                        <div class="rapport">
+                            <h3>Santé</h3>
+                            <ul>
+                                <li>Hématies<span>5000</span></li>
+                                <li>Urée<span>20g</span></li>
+                                <li>Créatine<span>1,5g</span></li>
+                                <li>Ethanol<span>0g</span></li>
+                                <li>Albumine<span>4g</span></li>
+                                <li>HCG (Grossesse)<span>4UI</span></li>
+                            </ul>
+                        </div><!-- endOf .rapport -->
+
+                        <div class="container-btn">
+
+                            <button>Envoyer le rapport</button>
+                        
+                        </div>
+
+                    </div><!-- endOf .detail -->
+                
+
+                </section> <!-- endOf #rapportDetail -->
+
+
+                <section id="stat" class="hideRight">
+                    <h2>Alimentation</h2>
+                    <div class="resultats">
+                        <ul>
+                            <li><a href="#statsElt">Protéines<div class="icon" id="ico1"></div></a></li>
+                            <li><a href="#statsElt">Calcium<div class="icon" id="ico2"></div></a></li>
+                            <li><a href="#statsElt">Glucose<div class="icon" id="ico3"></div></a></li>
+                            <li><a href="#statsElt">Sodium<div class="icon" id="ico4"></div></a></li>
+                            <li><a href="#statsElt">Potassium<div class="icon" id="ico5"></div></a></li>
+                            <li><a href="#statsElt">Caféine<div class="icon" id="ico6"></div></a></li>
+                        </ul>
+                    </div>
+                    <h2>Santé</h2>
+                    <div class="resultats">
+                        <ul>
+                            <li><a href="">Hématies<div class="icon" id="ico7"></div></a></li>
+                            <li><a href="">Urée<div class="icon" id="ico8"></div></a></li>
+                            <li><a href="">Créatine<div class="icon" id="ico9"></div></a></li>
+                            <li><a href="">Ethanol<div class="icon" id="ico10"></div></a></li>
+                            <li><a href="">Albumine<div class="icon" id="ico11"></div></a></li>
+                        </ul>
+                    </div>
+                
+
+                </section> <!-- endOf #stat -->
+
+
+                <section id="statsElt" class="hideRight">
+                    
+                    <div class="subHeader"><h3>g/24h</h3></div>
+                    <div id="statsElt-normal-bg">
+                        <p>normal</p>
+                    </div>
+
+                    <div id="statsElt-scale">
+                        <ul>
+                            <li>0</li>
+                            <li>2.5</li>
+                            <li>5</li>
+                            <li>7.5</li>
+                            <li>10</li>
+                        </ul>
+                    </div>
+
+                    <div class="rapport">
+                        <p>6oct <span>10h30</span></p>
+                    </div>
+                    <div class="rapport">
+                        <p>6oct <span>10h30</span></p>
+                    </div>
+                    <div class="rapport">
+                        <p>6oct <span>10h30</span></p>
+                    </div>
+                    <div class="rapport">
+                        <p>6oct <span>10h30</span></p>
+                    </div>
+                    <div class="rapport">
+                        <p>6oct <span>10h30</span></p>
+                    </div>
+                    
+                </section> <!-- endOf #statsElt -->
+
+            </main>
+
+
+            <footer class="clear hide">
+                <ul>
+                    <li><a href="#rapport">Rapport</a></li>
+                    <li><a href="#stats">Stats</a></li>
+                </ul>
+            </footer>
+
+        </div> <!-- endOf #content -->
+
+
+        <script src="./js/jquery-1.11.0.min.js"></script>
+        <script src="./js/main.js"></script>
+
+    </body>
+</html>

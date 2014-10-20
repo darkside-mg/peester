@@ -1,0 +1,91 @@
+/* STYLE CSS */
+
+body {
+	background: #d4d8d9;
+	font-family: 'nexa_lightregular'helvetica,sans-serif;
+
+}
+
+#first {
+	width: 50%;
+	height: 768px;
+	border-right: 1px solid #a4a4a4;
+	float: left;
+
+}
+#first #petitechasse {
+	background:url(../img/goutte.png)no-repeat;
+	width: 101px;
+	height: 150px;
+	margin: 30% auto 0 ;
+	display: block;
+	position: relative;
+}
+/*
+#first #petitechasse:hover{
+	background:red;
+	width: 134px;
+	height: 200px;
+	margin: 30% auto 0 ;
+	display: block;
+}
+
+*/
+#bloc1 {
+	background:url(../img/gouttepleine.png)no-repeat;;
+	width: 134px;
+	height: 0;
+	margin: 0 auto 0 ;
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	opacity: 0.5;
+}
+
+
+
+
+h2 {
+	font-size: 35px;
+	font-family: 'nexa_lightregular'helvetica,sans-serif;
+	text-align: center;
+	margin-top: 30px;
+	letter-spacing: 5px;
+	color: #49AEF2;
+	letter-spacing: 5px;
+
+}
+#second {
+	width: 49.8%;
+	height: 768px;
+	float: right;
+}
+#second #grandechasse {
+	background:url(../img/goutte3.png)no-repeat;
+	width: 319px;
+	height: 150px;
+	margin: 30% auto 0;
+	display: block;
+	position: relative;
+}
+#bloc2 {
+	background:url(../img/goutte3pleine.png)no-repeat;;
+	width: 425px;
+	height: 0;
+	margin: 0 auto 0 ;
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	opacity: 0.5;
+}
+
+#capteur{
+	margin: 20% auto 0;
+	display: block;
+
+}
+
+
+
+
+
