@@ -12,7 +12,7 @@ vidéo de présentation du projet:
 
 http://youtu.be/I2xWRyjyTSw
 
-Membres du groupe :
+Membres du groupe UIXperts :
 
 Vincent de Salle, Mathieu Godefroid, Raza Haq Qazi, Thomas Kingunia, Cindy Mateus, Stefano Rossi, Sophie Troye.
 
